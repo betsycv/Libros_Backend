@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/estilossignup.css">
+</head>
+<body>
+    <div>
+    <h1>Crear cuenta</h1>
+    <div id="error-message" style="color: brown;"></div>
+    <form id="signupform" action="api/signup" method="POST">
+        <div>
+            <label for="username">Usuario:</label>
+            <input type="text" name="username" id="username" required>
+        </div>
+        <div>
+            <label for="password">Contraseña</label>
+            <input type="password" name="password" id="password" required>
+        </div>
+        
+        <div><label for="role">Rol</label> <br/>
+        <select name="role" id="role" required>
+            <option value=""> Selecciona un Rol</option>
+            <option value="user">User</option>
+            <option value="admin">Admin</option>
+        </select>
+        </div>
+
+        <div>
+            <button type="submit">Signup</button>
+        </div>
+        <div><p> Ya tienes una cuenta? <a href="login.html"> Inicia sesión </a>  </p></div>
+    </form>
+</div>
+
+<script src="signup.js"></script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+* {
+    box-sizing: border-box;
+    margin: 0; 
+    padding: 0; 
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    text-align: center; 
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.account-button {
+    background-color: #71418b;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.account-button:hover {
+    background-color: #846573;
+}
